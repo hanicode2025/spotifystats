@@ -91,7 +91,7 @@ export function buildHeatmapData(recentTracks: any[]) {
 // Generate personality type from music data
 export function getMusicPersonality(
   genres: { genre: string; count: number }[],
-  mood: { energy: number; valence: number; danceability: number } | null
+  mood: { energy: number; valence: number; danceability: number; acousticness: number } | null
 ) {
   if (!mood || !genres.length) return 'The Explorer'
 
